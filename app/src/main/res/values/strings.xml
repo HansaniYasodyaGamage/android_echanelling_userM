@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">echan_user</string>
+
+    <string name="country_prompt">Title</string>
+
+    <string-array name="title_arrays">
+        <item>Mr</item>
+        <item>Mrs</item>
+        <item>Miss</item>
+
+    </string-array>
+
+</resources>
