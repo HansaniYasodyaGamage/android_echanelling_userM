@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-//
-//        btnplogin.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                openpatient();
-//            }
-//        });
+
+        btnplogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openpatient();
+            }
+        });
     }
 
 
@@ -73,25 +73,25 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-//    public void openpatient(){
-//        btnplogin.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                        String mobile = "0710525884";
-//                        String password = "hansi123";
-//
-//                        if((mobile.equals(mobiletxt.getText().toString())) && (password.equals(passwordtxt.getText().toString()))){
-//                            Intent intent = new Intent(MainActivity.this, channel.class);
-//                            startActivity(intent);
-//                            Toast.makeText(MainActivity.this , "Searching your consultant", Toast.LENGTH_SHORT).show();
-//
-//                        }else{
-//                            Toast.makeText(MainActivity.this , "Not Available Doctor", Toast.LENGTH_SHORT).show();
-//
-//                        }
-//
-//                    }
-//                });
-//
-//            }
+    public void openpatient(){
+        btnplogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                        String mobile = "0710525884";
+                        String password = "hansi123";
+
+                        if((mobile.equals(mobiletxt.getText().toString())) && (password.equals(passwordtxt.getText().toString()))){
+                            Intent intent = new Intent(MainActivity.this, patientMain.class);
+                            startActivity(intent);
+                            Toast.makeText(MainActivity.this , "Searching your consultant", Toast.LENGTH_SHORT).show();
+
+                        }else{
+                            Toast.makeText(MainActivity.this , "Not Available Doctor", Toast.LENGTH_SHORT).show();
+
+                        }
+
+                    }
+                });
+
+            }
 }
