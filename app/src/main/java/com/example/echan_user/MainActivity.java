@@ -22,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnRegister = (Button) findViewById(R.id.btnReg);
-        btnplogin=(Button) findViewById(R.id.btnLog);
+        btnplogin=(Button) findViewById(R.id.btnLog1);
         btnDoc=(Button) findViewById(R.id.doctor2);
 
-        mobiletxt = (EditText) findViewById(R.id.pmobile);
-        passwordtxt = (EditText) findViewById(R.id.ppass);
+        mobiletxt = (EditText) findViewById(R.id.pmobile1);
+        passwordtxt = (EditText) findViewById(R.id.ppass1);
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,7 +50,38 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private boolean validatePhoneNo(){
+        String val=mobiletxt.getText().toString();
+        if(val.isEmpty()){
+            mobiletxt.setError("Field cannot be empty");
+            return false;
+        }else{
+            mobiletxt.setError(null);
+            return true;
+        }
+    }
 
+    private boolean validatePassword(){
+        String val=passwordtxt.getText().toString();
+        String passwordVal="^" +
+                "(?=.*[a-zA-Z])"+
+                "(?=.*[@#$%^&])"+
+                "(?=\\S+$)"+
+                ".{4,}" +
+                "$" ;
+
+        if(val.isEmpty()){
+            passwordtxt.setError("Field cannot be empty");
+            return false;
+        } else if(!val.matches(passwordVal)){
+            passwordtxt.setError("Password is too weak");
+            return false;
+        }
+        else{
+            passwordtxt.setError(null);
+            return true;
+        }
+    }
 
     public void docLog(){
         btnDoc.setOnClickListener(new View.OnClickListener() {
@@ -78,15 +109,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                         String mobile = "0710525884";
-                        String password = "hansi123";
+                        String password = "Hansi123@";
 
-                        if((mobile.equals(mobiletxt.getText().toString())) && (password.equals(passwordtxt.getText().toString()))){
+                        if(!validatePhoneNo() | !validatePassword()){
+                            return;
+                        }
+
+                        else if((mobile.equals(mobiletxt.getText().toString())) && (password.equals(passwordtxt.getText().toString()))){
                             Intent intent = new Intent(MainActivity.this, patientMain.class);
                             startActivity(intent);
-                            Toast.makeText(MainActivity.this , "Searching your consultant", Toast.LENGTH_SHORT).show();
 
                         }else{
-                            Toast.makeText(MainActivity.this , "Not Available Doctor", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this , "UserName or Password incorrect", Toast.LENGTH_SHORT).show();
 
                         }
 

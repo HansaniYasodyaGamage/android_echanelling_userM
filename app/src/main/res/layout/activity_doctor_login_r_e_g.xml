@@ -18,10 +18,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLog" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLog1" />
 
     <EditText
-        android:id="@+id/ppass"
+        android:id="@+id/ppass1"
         android:layout_width="325dp"
         android:layout_height="55dp"
         android:layout_marginStart="20dp"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnPatientDoc" />
 
     <EditText
-        android:id="@+id/pmobile"
+        android:id="@+id/pmobile1"
         android:layout_width="325dp"
         android:layout_height="55dp"
         android:layout_marginStart="20dp"
@@ -66,7 +66,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnLog"
+        android:id="@+id/btnLog1"
         android:layout_width="180dp"
         android:layout_height="48dp"
         android:layout_marginTop="108dp"
@@ -76,7 +76,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ppass" />
+        app:layout_constraintTop_toBottomOf="@+id/ppass1" />
 
     <Button
         android:id="@+id/doctor2"
@@ -85,7 +85,7 @@
         android:background="@color/colorPrimary"
         android:text="Doctor"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/pmobile"
+        app:layout_constraintBottom_toTopOf="@+id/pmobile1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btnPatientDoc"
@@ -114,5 +114,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.809"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ppass" />
+        app:layout_constraintTop_toBottomOf="@+id/ppass1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

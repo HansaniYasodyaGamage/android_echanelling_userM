@@ -40,7 +40,7 @@
 
 
         <EditText
-            android:id="@+id/editPass"
+            android:id="@+id/editTitle"
             android:layout_width="match_parent"
             android:layout_marginRight="40dp"
             android:layout_height="wrap_content"

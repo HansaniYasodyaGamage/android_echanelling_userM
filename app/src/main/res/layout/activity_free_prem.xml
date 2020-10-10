@@ -34,13 +34,13 @@
         android:id="@+id/textView3"
         android:layout_width="306dp"
         android:layout_height="154dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/textview_border"
         android:text="*15% of ECH service when making appointment through app   *30% of ECH service fee when making an appointmnet through ECH call                                      *able view doctor channel history "
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintHorizontal_bias="0.561"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 

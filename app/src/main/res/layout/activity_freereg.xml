@@ -40,7 +40,7 @@
 
 
         <EditText
-            android:id="@+id/editPass"
+            android:id="@+id/editTitle"
             android:layout_width="match_parent"
             android:layout_marginRight="40dp"
             android:layout_height="wrap_content"
@@ -54,13 +54,13 @@
         <EditText
             android:id="@+id/editfirst"
             android:layout_width="match_parent"
-            android:layout_marginRight="40dp"
             android:layout_height="wrap_content"
+            android:layout_alignTop="@id/logo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
             android:ems="10"
             android:hint="First Name"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="20dp"
-            android:layout_alignTop="@id/logo"
             android:inputType="textPassword" />
         <EditText
             android:id="@+id/editlast"
