@@ -13,6 +13,7 @@ public class doctorLoginREG extends AppCompatActivity {
     private Button btnplogin;
     private EditText mobiletxt, passwordtxt;
     private Button rDregBTN;
+    private Button patientbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class doctorLoginREG extends AppCompatActivity {
         mobiletxt = (EditText) findViewById(R.id.pmobile1);
         passwordtxt = (EditText) findViewById(R.id.ppass1);
         rDregBTN = (Button) findViewById(R.id.btnRegDD);
+        patientbtn=(Button)findViewById(R.id.btnPatientDoc1) ;
 
         btnplogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +40,15 @@ public class doctorLoginREG extends AppCompatActivity {
                 openDocReg();
             }
         });
+
+        patientbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPatientLog();
+            }
+        });
+
+
 
     }
 
@@ -101,6 +112,16 @@ public class doctorLoginREG extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(doctorLoginREG.this, doctorreg.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void openPatientLog() {
+        patientbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(doctorLoginREG.this, MainActivity.class);
                 startActivity(intent);
             }
         });

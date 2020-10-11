@@ -34,7 +34,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPatientDoc" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPatientDoc1" />
 
     <EditText
         android:id="@+id/pmobile1"
@@ -50,18 +50,18 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPatientDoc" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPatientDoc1" />
 
     <Button
-        android:id="@+id/btnPatientDoc"
+        android:id="@+id/btnPatientDoc1"
         android:layout_width="143dp"
         android:layout_height="45dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="108dp"
         android:background="@android:color/darker_gray"
         android:text="PATIENT"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -80,17 +80,17 @@
 
     <Button
         android:id="@+id/doctor2"
-        android:layout_width="180dp"
-        android:layout_height="48dp"
+        android:layout_width="144dp"
+        android:layout_height="46dp"
         android:background="@color/colorPrimary"
         android:text="Doctor"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/pmobile1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btnPatientDoc"
+        app:layout_constraintStart_toEndOf="@+id/btnPatientDoc1"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintVertical_bias="0.396" />
 
     <ImageView
         android:id="@+id/imageView"

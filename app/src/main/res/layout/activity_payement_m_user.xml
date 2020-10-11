@@ -149,15 +149,15 @@
 
         <Button
 
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:id="@+id/button2"
+            android:id="@+id/btnProceed"
             android:layout_width="160dp"
             android:layout_height="42dp"
+            android:layout_row="0"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
             android:layout_marginBottom="32dp"
-
             android:text="Continue"
-
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

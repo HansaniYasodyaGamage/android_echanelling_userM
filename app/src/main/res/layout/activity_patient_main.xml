@@ -21,44 +21,54 @@
         android:id="@+id/button"
         android:layout_width="162dp"
         android:layout_height="146dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="196dp"
+        android:background="@color/colorPrimary"
         android:text="Add Appointment"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintEnd_toStartOf="@+id/btnProceed"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="170dp"
-        android:layout_height="146dp"
+        android:id="@+id/btnProceed"
+        android:layout_width="156dp"
+        android:layout_height="145dp"
         android:layout_marginTop="104dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorPrimary"
         android:text="Medicine/Lab"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="164dp"
-        android:layout_height="137dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="161dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+
+        android:layout_marginTop="100dp"
+        android:background="@color/colorPrimary"
         android:text="Channel History"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="165dp"
-        android:layout_height="138dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="155dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginRight="30dp"
+        android:background="@color/colorPrimary"
         android:text="Talk to Doctor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintHorizontal_bias="0.971"
         app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnProceed" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

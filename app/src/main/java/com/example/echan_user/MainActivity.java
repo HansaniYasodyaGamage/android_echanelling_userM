@@ -63,19 +63,20 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean validatePassword(){
         String val=passwordtxt.getText().toString();
-        String passwordVal="^" +
-                "(?=.*[a-zA-Z])"+
-                "(?=.*[@#$%^&])"+
-                "(?=\\S+$)"+
-                ".{4,}" +
-                "$" ;
+//        String passwordVal="^" +
+//                "(?=.*[a-zA-Z])"+
+//                "(?=.*[@#$%^&])"+
+//                "(?=\\S+$)"+
+//                ".{4,}" +
+//                "$" ;
 
-        if(val.isEmpty()){
+        if(val.isEmpty()) {
             passwordtxt.setError("Field cannot be empty");
             return false;
-        } else if(!val.matches(passwordVal)){
-            passwordtxt.setError("Password is too weak");
-            return false;
+//        } else if(!val.matches(passwordVal)){
+//            passwordtxt.setError("Password is too weak");
+//            return false;
+//        }
         }
         else{
             passwordtxt.setError(null);
@@ -120,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent);
 
                         }else{
-                            Toast.makeText(MainActivity.this , "UserName or Password incorrect", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this , "Mobile Number or Password incorrect", Toast.LENGTH_SHORT).show();
 
                         }
 

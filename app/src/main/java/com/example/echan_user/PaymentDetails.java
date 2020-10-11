@@ -7,30 +7,30 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class PayementMUser extends AppCompatActivity {
-    private Button btnProce;
+public class PaymentDetails extends AppCompatActivity {
+    private Button btnOK;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payement_m_user);
+        setContentView(R.layout.activity_payment_details);
 
-        btnProce = (Button) findViewById(R.id.btnProceed);
-        btnProce.setOnClickListener(new View.OnClickListener() {
+
+        btnOK=(Button) findViewById(R.id.btnok);
+        btnOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                oprnPaymentD();
+                MainLog();
             }
         });
 
-
     }
 
-
-    public void oprnPaymentD(){
-        btnProce.setOnClickListener(new View.OnClickListener() {
+    public void MainLog(){
+        btnOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PayementMUser.this , PaymentDetails.class);
+                Intent intent = new Intent(PaymentDetails.this , MainActivity.class);
                 startActivity(intent);
             }
         });

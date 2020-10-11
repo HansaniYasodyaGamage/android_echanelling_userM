@@ -8,15 +8,16 @@
 
     <Button
         android:id="@+id/doctor2"
-        android:layout_width="143dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
+        android:background="@android:color/darker_gray"
         android:text="doctor"
         android:textColor="@android:color/background_dark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintHorizontal_bias="0.785"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,10 +45,10 @@
         android:layout_marginRight="20dp"
         android:ems="10"
         android:hint="Enter password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPatientDoc" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPatientDoc1" />
 
     <EditText
         android:id="@+id/pmobile1"
@@ -63,10 +64,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPatientDoc" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPatientDoc1" />
 
     <Button
-        android:id="@+id/btnPatientDoc"
+        android:id="@+id/btnPatientDoc1"
         android:layout_width="143dp"
         android:layout_height="45dp"
         android:layout_marginStart="30dp"
