@@ -40,19 +40,19 @@
 
 
         <EditText
-            android:id="@+id/editTitle"
+            android:id="@+id/editTitleD"
             android:layout_width="match_parent"
-            android:layout_marginRight="40dp"
             android:layout_height="wrap_content"
+            android:layout_alignTop="@id/logo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
             android:ems="10"
             android:hint="Title"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="20dp"
-            android:layout_alignTop="@id/logo"
             android:inputType="textPassword" />
 
         <EditText
-            android:id="@+id/editfirst"
+            android:id="@+id/editfirst1D"
             android:layout_width="match_parent"
             android:layout_marginRight="40dp"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
             android:layout_alignTop="@id/logo"
             android:inputType="textPassword" />
         <EditText
-            android:id="@+id/editlast"
+            android:id="@+id/editlast1D"
             android:layout_width="match_parent"
             android:layout_marginRight="40dp"
             android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
             android:layout_alignTop="@id/logo"
             android:inputType="textPassword" />
         <EditText
-            android:id="@+id/editemail"
+            android:id="@+id/editSpecD"
             android:layout_width="match_parent"
             android:layout_marginRight="40dp"
             android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
             android:layout_alignTop="@id/logo"
             android:inputType="textPassword" />
         <EditText
-            android:id="@+id/editdob"
+            android:id="@+id/editEmD"
             android:layout_width="match_parent"
             android:layout_marginRight="40dp"
             android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
             android:layout_alignTop="@id/logo"
             android:inputType="textPassword" />
         <EditText
-            android:id="@+id/editpass"
+            android:id="@+id/editpass1D"
             android:layout_width="match_parent"
             android:layout_marginRight="40dp"
             android:layout_height="wrap_content"
@@ -106,19 +106,21 @@
             android:layout_marginBottom="20dp"
             android:layout_alignTop="@id/logo"
             android:inputType="textPassword" />
+
         <EditText
-            android:id="@+id/editconfirm"
+            android:id="@+id/editconfirm1D"
             android:layout_width="match_parent"
-            android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="20dp"
             android:layout_height="wrap_content"
+            android:layout_alignTop="@id/logo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
             android:ems="10"
             android:hint="Confirm Password"
-            android:layout_alignTop="@id/logo"
             android:inputType="textPassword" />
 
         <Button
+            android:id="@+id/rbutonD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="40dp"

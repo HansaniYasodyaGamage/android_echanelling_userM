@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnRegister = (Button) findViewById(R.id.btnReg);
+        btnRegister = (Button) findViewById(R.id.btnRegDD);
         btnplogin=(Button) findViewById(R.id.btnLog1);
         btnDoc=(Button) findViewById(R.id.doctor2);
 

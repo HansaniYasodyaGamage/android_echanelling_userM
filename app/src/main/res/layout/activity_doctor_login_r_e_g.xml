@@ -8,7 +8,7 @@
 
 
     <Button
-        android:id="@+id/btnReg"
+        android:id="@+id/btnRegDD"
         android:layout_width="180dp"
         android:layout_height="48dp"
         android:layout_marginTop="48dp"

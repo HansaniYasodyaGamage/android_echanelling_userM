@@ -15,20 +15,20 @@ public class free_prem extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_free_prem);
 
-        btnpre = (Button) findViewById(R.id.button5);
-        btnfree = (Button) findViewById(R.id.button6);
+        btnfree = (Button) findViewById(R.id.btnFreeRe);
+        btnpre = (Button) findViewById(R.id.btnPreReg);
+
+        btnfree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFreeUser1();
+            }
+        });
 
         btnpre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openPreUser();
-            }
-        });
-
-        btnfree.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openFreeUser();
             }
         });
     }
@@ -42,12 +42,12 @@ public class free_prem extends AppCompatActivity {
             }
         });
     }
-    public void openFreeUser(){
-        btnpre.setOnClickListener(new View.OnClickListener() {
+    public void openFreeUser1(){
+        btnfree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(free_prem.this , freereg.class);
-                startActivity(intent1);
+                Intent intent = new Intent(free_prem.this , freereg.class);
+                startActivity(intent);
             }
         });
     }
