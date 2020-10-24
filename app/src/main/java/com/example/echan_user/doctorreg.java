@@ -32,6 +32,8 @@ public class doctorreg extends AppCompatActivity {
                 openDocLog1();
             }
         });
+
+
     }
 
     private boolean validateTitle(){

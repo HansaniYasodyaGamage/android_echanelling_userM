@@ -2,15 +2,26 @@ package com.example.echan_user;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class prem_reg extends AppCompatActivity {
     private EditText title, fname, lname, email, nic, dob, mobileNo, password, cpassword;
     private Button rbutton11;
+    private DatePickerDialog.OnDateSetListener mDateSetListener;
+    int year;
+    int month;
+    int day;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +34,28 @@ public class prem_reg extends AppCompatActivity {
         email = (EditText) findViewById(R.id.editSpecD);
         nic = (EditText) findViewById(R.id.editnic1);
         dob = (EditText) findViewById(R.id.editEmD);
+
+        dob.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                 Calendar calendar=Calendar.getInstance();
+                year=calendar.get(Calendar.YEAR);
+                month=calendar.get(Calendar.MONTH);
+                day=calendar.get(Calendar.DAY_OF_MONTH);
+                DatePickerDialog dialog=new DatePickerDialog(prem_reg.this, android.R.style.Theme_Holo_Light_Dialog_MinWidth,mDateSetListener
+                  ,year,month,day);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                dialog.show();
+            }
+        });
+        mDateSetListener=new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                String date=month+"/"+day+"/"+year ;
+                dob.setText(date);
+
+            }
+        };
         mobileNo = (EditText) findViewById(R.id.editmobile1);
         password = (EditText) findViewById(R.id.editpass1D);
         cpassword = (EditText) findViewById(R.id.editconfirm1D);

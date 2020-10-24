@@ -78,7 +78,7 @@
     <EditText
         android:id="@+id/editSpecD"
         android:layout_width="match_parent"
-        android:layout_height="33dp"
+        android:layout_height="wrap_content"
         android:layout_alignTop="@id/logo"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
@@ -118,7 +118,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginBottom="20dp"
         android:layout_alignTop="@id/logo"
-        android:inputType="text" />
+        android:inputType="phone" />
     <EditText
         android:id="@+id/editpass1D"
         android:layout_width="match_parent"
